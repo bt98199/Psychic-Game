@@ -33,8 +33,6 @@
               console.log(element + ", ");
           });
       }
-
-
       // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
       if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
 
