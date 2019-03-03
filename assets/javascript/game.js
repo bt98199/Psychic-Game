@@ -47,7 +47,7 @@
           }
 
           // Hide the directions
-          directionsText.textContent = "";
+          // directionsText.textContent = "";
 
           // Display the user and computer guesses, and wins/losses/ties.
           userChoiceText.textContent = "You chose: " + userGuess;
