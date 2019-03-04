@@ -47,7 +47,7 @@ function reset() {
 //  guessHistoryBuild();
   
   // 3 possible out comes, a win, a loss of guess, or a loss
-  if (guesses === 1) {
+  if (guesses === 0) {
           losses++;
           document.querySelector('#losses-text').innerHTML = "Losses: " + losses;
           alert("You lost, Carnac");
@@ -61,16 +61,16 @@ function reset() {
         guesses--;
      }
 
-// Hide the directions
-// directionsText.textContent = "";
-
           // Display the user and computer guesses, and wins/losses/ties.
           userChoiceText.textContent = "You chose: " + userGuess;
-          computerChoiceText.textContent = "The computer chose: " + letterToGuess;
+
           winsText.textContent = "Wins: " + wins;
           lossesText.textContent = "Losses: " + losses;
           guessesText.textContent = "Guesses Left: " + guesses;
           document.getElementById('guess-history').innerHTML = "Your Guesses so far: " + (guessHistoryArray.join(", "));
+          // Hide the computer choice (used for ease in debugging)
+          computerChoiceText.textContent = "";
+          //computerChoiceText.textContent = "The computer chose: " + letterToGuess;
 
 }
 
