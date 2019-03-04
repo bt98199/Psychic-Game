@@ -7,8 +7,7 @@
   var losses = 0;
   var guesses = 9;
   var letterToGuess = undefined;
-
-
+  
   // Create variables that hold references to the places in the HTML where we want to display things.
   var directionsText = document.getElementById("directions-text");
   var userChoiceText = document.getElementById("userchoice-text");
@@ -19,8 +18,7 @@
   var guessHistoryText = document.getElementById("guess-history");
 
 // Defining Functions
-//Build the array of past guesses
-
+//Build the array of past guessesß
 
 function psyChoice() {
     letterToGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
@@ -71,6 +69,5 @@ function reset() {
           // Hide the computer choice (used for ease in debugging)
           computerChoiceText.textContent = "";
           //computerChoiceText.textContent = "The computer chose: " + letterToGuess;
-
 }
 
